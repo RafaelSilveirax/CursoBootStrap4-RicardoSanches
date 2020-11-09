@@ -1,0 +1,14 @@
+body{
+    background-color:#b2aaf7;
+    
+}
+
+.carousel-inner img {
+    margin: auto;
+  }
+
+  .scrollsypSite{
+      position:relative ;
+      overflow:auto;
+      height: 380px;
+  }
