@@ -4,9 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Curso Bootstrap</title>
-    <link rel="stylesheet" href="bootstrap.min.css">
+   
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/fontawesome.css">
+
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/brands.css">
+
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/solid.css">
+
     <link rel="stylesheet" href="estilo.css">
 </head>
+
 <body>
     <!--###########################MENU################################-->
     <nav class="navbar navbar-expand-lg  navbar-dark bg-dark" style="background: -webkit-linear-gradient(#669ff5, #3083ff, #3083ff)">
@@ -141,14 +150,16 @@
 
     </div>
 
+    <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
+
     <div class="container">
 
         <div class="row">
 
             <div class="col-12 text-center mt-5">
 
-                <h1 class="display-3">Lorem ipsum dolor </h1>
-                <p>sit amet consectetur, adipisicing elit. Maiores, dolorum quibusdam labore laudantium dolore beatae adipisci necessitatibus totam vitae aspernatur repellat architecto, culpa reiciendis assumenda quaerat, laborum quas alias voluptates?</p>
+                <h1 class="display-3"> <i class="fas fa-cogs text-primary"></i> Lorem ipsum dolor </h1>
+                <p>sit amet  consectetur, adipisicing elit. Maiores, dolorum quibusdam labore laudantium dolore beatae adipisci necessitatibus totam vitae aspernatur repellat architecto, culpa reiciendis assumenda quaerat, laborum quas alias voluptates?</p>
 
             </div>
 
@@ -328,6 +339,7 @@
             
     </div>
 
+    <!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXJUMBOTRONXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
    
 
     <div class="jumbotron jumbotron-fluid">
@@ -338,9 +350,7 @@
 
                 <div class="col-12 text-center">
                 
-                    <h1 class="display-4">
-                        Lorem ipsum dolor 
-                    </h1>
+                    <h1 class="display-4"> <i class="fas fa-video text-primary"></i> Lorem ipsum dolor  </h1>
                     <p class="lead">sit amet consectetur adipisicing elit. Neque accusantium nobis iusto consequatur nemo autem officiis qui earum ducimus molestiae esse doloribus itaque nesciunt voluptatibus nihil, facere optio quam cumque.</p>
                     <hr>
 
@@ -450,13 +460,129 @@
 
         </div>
     </div>
+
+    <div class="container">
+       
+        <div class="row">
+
+            <div class="col-12 text-center my-5">
+
+                <h1 class="display-4"><i class="fas fa-baby-carriage text-primary "></i>Formulario</h1>
+
+            </div>
+
+        </div>
+
+        <div class="row justify-content-center mb-5">
+
+            <div class="col-sm-12 col-md-10 col-lg-8">
+
+                <form action="">
+
+                    <div class="form-row">
+
+                        <div class="form-group col-sm-6">
+
+                            <label for="inputNome">Seu Nome</label>
+                            <input type="text" class="form-control" id="inputNome" placeholder="Nome">
+
+                        </div>
+
+                        <div class="form-group col-sm-6">
+
+                            <label for="inputSobrenome">Seu Sobrenome</label>
+                            <input type="text" class="form-control" id="inputSobrenome" placeholder="Sobrenome">
+
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+
+                        <div class="form-group col-sm-12">
+
+                            <label for="inputEnd">Seu endereço</label>
+                            <input type="text" class="form-control" id="inputEnd" placeholder="endereço completo">
+
+                        </div>
+
+                    </div>
+
+                    <div class="form-row">
+
+                        <div class="form-group col-sm-6">
+
+                            <label for="inputCid">Sua cidade</label>
+                            <input type="text" class="form-control" id="inputCid" placeholder="cidade">
+
+                        </div>
+
+                        <div class="form-group col-sm-4">
+
+                            <label for="inputEst">Seu estado</label>
+                            <select name="" id="inputEst" class="form-control">
+                                <option selected value="">Escolha...</option>
+                                <option value="">...</option>
+                                <option value="">...</option>
+                                <option value="">...</option>
+                                <option value="">...</option>
+                            </select>
+
+                        </div>
+
+                        <div class="form-group col-sm-2">
+
+                            <label for="inputCEP">Seu cep</label>
+                            <input type="text" id="inputCEP" class="form-control">
+
+                        </div>
+
+                    </div>
+
+                    <div class="form-row">
+
+                        <div class="form-group col-sm-12">
+
+                            <div class="form-check">
+
+                                <label for="" class="form-check-label">
+                                    <input type="checkbox" class="form-check-input"> Desejo receber novidades por e-mail
+                                </label>
+
+                            </div>
+
+                        </div>                     
+                    
+                    </div>
+
+                    <div class="form-row">
+
+                        <div class="col-sm-12">
+
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+
+                            <a tabindex="0" class="btn btn-secondary ml-2" role="button" data-toggle="popover"   data-trigger="focus" data-placement="right" title="GOOGLE" data-content="ELE ESTA DE OBSERVANDO">
+                                Ajuda
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
     
   
   
   
   
   
-    <!--modal-->
+    <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxmodalxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
 
     <div class="modal fade" id="siteModal" tabindex="-1" role="dialog">
         <div class="modal-dialog modal-lg" role="document">
@@ -504,12 +630,25 @@
                 </div>
         
             </div>
-        <div>
+        </div>
     </div>
     
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="https://getbootstrap.com/docs/4.1/assets/js/vendor/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
     
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
-    <script src="bootstrap.min.js"></script>
+    
+    <script>
+
+        $(function () {
+          $('[data-toggle="popover"]').popover()
+        })
+        
+            </script>
+        
+
+    
     
 </body>
 </html>
